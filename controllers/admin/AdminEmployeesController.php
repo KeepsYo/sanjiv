@@ -242,12 +242,12 @@ class AdminEmployeesControllerCore extends AdminController
                     'name' => 'lastname',
                     'required' => true
                 ),
-     //            array(
-     //                'type' => 'html',
-     //                'name' => 'employee_avatar',
-     //                'html_content' => '<div id="employee-thumbnail"><a href="http://www.prestashop.com/forums/index.php?app=core&amp;module=usercp" target="_blank" style="background-image:url('.$obj->getImage().')"></a></div>
-					// <div class="alert alert-info">'.sprintf($this->l('Your avatar in PrestaShop 1.6.x is your profile picture on %1$s. To change your avatar, log in to PrestaShop.com with your email %2$s and follow the on-screen instructions.'), '<a href="http://www.prestashop.com/forums/index.php?app=core&amp;module=usercp" class="alert-link" target="_blank">PrestaShop.com</a>', $obj->email).'</div>',
-     //            ),
+                 array(
+                    'type' => 'html',
+                    'name' => 'employee_avatar',
+                    'html_content' => '<div id="employee-thumbnail"><a href="http://www.prestashop.com/forums/index.php?app=core&amp;module=usercp" target="_blank" style="background-image:url('.$obj->getImage().')"></a></div>
+					 <div class="alert alert-info">'.sprintf($this->l('Your avatar in PrestaShop 1.6.x is your profile picture on %1$s. To change your avatar, log in to PrestaShop.com with your email %2$s and follow the on-screen instructions.'), '<a href="http://www.prestashop.com/forums/index.php?app=core&amp;module=usercp" class="alert-link" target="_blank">PrestaShop.com</a>', $obj->email).'</div>',
+                ),
                 array(
                     'type' => 'text',
                     'class'=> 'fixed-width-xxl',
